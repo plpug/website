@@ -1,0 +1,15 @@
+@font-face{src:local("Roboto Condensed Regular"),local("RobotoCondensed-Regular"),url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsK8NE7_Gi-Xz52ZQ_AwfA78.woff) format("woff");font-weight:400;font-style:normal;font-family:"Roboto Condensed"}
+*{margin:0;padding:0}
+body{font-family:"Roboto Condensed";margin:0 auto;width:1200px}
+section{display:block}
+a{color:rgb(211, 75, 75);text-decoration:none}
+a:hover{color:rgb(238, 0, 0);text-decoration:underline}
+h1{margin:40px 0;text-align:center}
+section#left {width:500px;float:left;margin-left:100px}
+section#left h1,h2{margin-top:30px}
+section#left section{text-align:center;background-color:rgb(233, 217, 217);padding:10px;width:470px;margin:10px 0;border:1px solid rgba(111, 48, 48, 0.32)}
+section#left section p{padding: 7px 0}
+section#left p.form {background-color:rgba(0, 0, 0, 0.78);color:#FFF;padding:10px;border-radius:10px;width:200px;text-align:center;margin:20px 0 0 130px;box-shadow:4px 4px 4px #DAD0D0;}
+section#right {float:right;margin-bottom:50px}
+section#right p {margin-top:10px;}
+section#right ol {margin:5px 0 0 35px}
