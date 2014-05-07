@@ -5,11 +5,19 @@ section{display:block}
 a{color:rgb(211, 75, 75);text-decoration:none}
 a:hover{color:rgb(238, 0, 0);text-decoration:underline}
 h1{margin:40px 0;text-align:center}
-section#left {width:500px;float:left;margin-left:100px}
+nav{width:960px;margin:50px auto 110px auto;}
+nav ul{float:left;list-style-type:none;}
+nav ul li{float:left;padding:0 20px;}
+nav ul li a{padding:20px;font-weight:bold;}
+nav ul li a.current,nav ul li a:hover{background-color:rgb(194, 0, 0);color:#FFF;padding:20px;text-decoration:none}
+section#contener{width:100%;float:left;}
+section#left{width:500px;float:left;margin-left:100px}
 section#left h1,h2{margin-top:30px}
-section#left section{text-align:center;background-color:rgb(233, 217, 217);padding:10px;width:470px;margin:10px 0;border:1px solid rgba(111, 48, 48, 0.32)}
-section#left section p{padding: 7px 0}
-section#left p.form {background-color:rgba(0, 0, 0, 0.78);color:#FFF;padding:10px;border-radius:10px;width:200px;text-align:center;margin:20px 0 0 130px;box-shadow:4px 4px 4px #DAD0D0;}
-section#right {float:right;margin-bottom:50px}
-section#right p {margin-top:10px;}
-section#right ol {margin:5px 0 0 35px}
+section#left p{margin-top:10px;width:420px;}
+section#left p.small{margin-top:20px;font-size:11px;color:#999;}
+section#right section p{padding:7px 0}
+section#right section{text-align:center;background-color:rgb(233, 217, 217);padding:10px;width:470px;margin:10px 0;border:1px solid rgba(111, 48, 48, 0.32)}
+section#right p.form{background-color:rgba(0, 0, 0, 0.78);color:#FFF;padding:10px;border-radius:10px;width:200px;text-align:center;margin:20px 0 0 130px;box-shadow:4px 4px 4px #DAD0D0;}
+section#right{float:left;margin:0 0 50px 20px}
+section#right ol{margin: 10px 0 10px 0;}
+section#right ol li{margin-left: 50px;}
