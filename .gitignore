@@ -1,0 +1,9 @@
+*.swp
+*.pyc
+media/
+sprawozdania/
+uchwały/
+docs/
+issues/
+.idea/
+
