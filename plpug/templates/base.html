@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>Title 1</title>
-</head>
-<body>
+{% extends "bootstrap_ui/bootstrap-skeleton.html" %}
+{% load i18n %}
+{% block body-content %}
+    <h1>{% trans 'Stowarzyszenie Polska Grupa Użytkowników Pythona' %}</h1>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'index' %}" title="O nas" class="current">O nas</a></li>
+                <li><a href="{% url 'members' %}" title="Zostań członkiem PLPUG">Zostań członkiem PLPUG</a></li>
+                <li><a href="{% url 'history' %}" title="Historia">Historia</a></li>
+                <li><a href="{% url 'partners' %}" title="Partnerzy">Partnerzy</a></li>
+                <li><a href="{% url 'contact' %}" title="{% trans 'Contact' %}">{% trans 'Contact' %}</a></li>
+            </ul>
+        </div>
+    </nav>
 
 {% block content %}{% endblock %}
 
-
-</body>
-</html>
+{% endblock %}
