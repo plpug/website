@@ -1,0 +1,36 @@
+@font-face {
+    src: local("Roboto Condensed Regular"),local("RobotoCondensed-Regular"),url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsK8NE7_Gi-Xz52ZQ_AwfA78.woff) format("woff");
+    font-style: normal;
+    font-family: "Roboto Condensed";
+}
+body {
+    font-family: "Roboto Condensed";
+}
+a {
+    color: rgb(211, 75, 75);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(238, 0, 0);
+    text-decoration: underline;
+}
+h1 {
+    text-align: center;
+}
+nav ul li.current,
+nav ul li.current a.current {
+    background-color: rgb(194, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+#content {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    text-align: center;
+}
+footer p {
+    margin:20px 0;
+}
