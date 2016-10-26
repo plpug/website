@@ -1,0 +1,4 @@
+Django==1.9.10
+django-bootstrap-ui==0.2.0
+django-tag-parser==2.1
+dominate==2.1.17
