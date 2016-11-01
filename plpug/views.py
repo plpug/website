@@ -9,6 +9,13 @@ class IndexView(generic.TemplateView):
     template_name = 'index.html'
 
 
+class MeetingsView(generic.TemplateView):
+    """
+    Meetings we are
+    """
+    template_name = 'meetings.html'
+
+
 class MembersView(generic.TemplateView):
     """
     Information for members page
@@ -28,6 +35,13 @@ class PartnersView(generic.TemplateView):
     Partners and Sponsors page
     """
     template_name = 'partners.html'
+
+
+class ProjectsView(generic.TemplateView):
+    """
+    Projects list page
+    """
+    template_name = 'projects.html'
 
 
 class ContactView(generic.TemplateView):

@@ -1,10 +1,11 @@
 {% extends 'base.html' %}{% load i18n %}
+{% load static %}
 
 {% block content %}
     <section>
         <h2>1.Zapoznaj się ze statutem, wypełnij i wyślij deklarację członkowską</h2>
         <p><a href="https://github.com/plpug/plpug-statut/blob/master/PLPUG-Statut.rst" target="_blank">Statut</a></p>
-        <p>Deklaracja członkowska PLPUG (pdf) - <a href="/docs/PLPUG-Deklaracja-członkowska.pdf" target="_blank" title="Deklaracja członkowska PLPUG">pobierz</a></p>
+        <p>Deklaracja członkowska PLPUG (pdf) - <a href="{% static 'docs/PLPUG-Deklaracja-członkowska.pdf'%}" target="_blank" title="Deklaracja członkowska PLPUG">pobierz</a></p>
         <p>Uzupełniony dokument należy przesłać pocztą tradycyjną na adres Stowarzyszenia lub
             mailem na adres: <a href="mailto:stowarzyszenie@plpug.org">stowarzyszenie@plpug.org</a></p>
         <h2>2. Opłać składkę członkowską:</h2>
@@ -29,7 +30,7 @@
                 <p><em>Darowizna na cele statutowe</em></p>
             </li>
         </ul>
-        <p>* - zniżki zgodnie z treścią <a href="/uchwaly/PLPUG-Uchwała-o-składkach-członkowskich.pdf" title="Uchwała Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015" target="_blank">Uchwały Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015</a></p>
+        <p>* - zniżki zgodnie z treścią <a href="{% static 'docs/PLPUG-Uchwala-o-skladkach-czlonkowskich.pdf' %}" title="Uchwała Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015" target="_blank">Uchwały Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015</a></p>
 	</section>
     <section>
         <p>Wszystkich zainteresowanych Stowarzyszeniem PLPUG zapraszamy do subskrypcji publicznej
