@@ -135,3 +135,6 @@ STATICFILES_FINDERS = (
     # other finders..
     'compressor.finders.CompressorFinder',
 )
+
+# http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css
+DJANGO_BOOTSTRAP_UI_THEME = 'bootswatch-spacelab'

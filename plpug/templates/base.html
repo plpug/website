@@ -24,19 +24,20 @@
 {% endblock %}
 
 {% block body-content %}
-    <h1>{% trans 'Stowarzyszenie Polska Grupa Użytkowników Pythona' %}</h1>
+    <header>
+        <img src="{% static 'img/logo_plpug_on_light.png' %}" alt="PLPUG" class="logo" />
+        <h1>{% trans 'Stowarzyszenie Polska Grupa Użytkowników Pythona' %}</h1>
+    </header>
     <nav class="navbar navbar-default">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="{% if request.path == '/' %}current{% endif %}"><a href="{% url 'index' %}" title="O nas" class="{% if request.path == '/' %}current{% endif %}">O nas</a></li>
-                <li class="{% if request.path == '/members' %}current{% endif %}"><a href="{% url 'members' %}" title="Zostań członkiem PLPUG" class="{% if request.path == '/members' %}current{% endif %}">Zostań członkiem PLPUG</a></li>
-                <li class="{% if request.path == '/meetings' %}current{% endif %}"><a href="{% url 'meetings' %}" title="Spotkania" class="{% if request.path == '/meetings' %}current{% endif %}">Spotkania</a></li>
-                <li class="{% if request.path == '/projects' %}current{% endif %}"><a href="{% url 'projects' %}" title="Projekty" class="{% if request.path == '/projects' %}current{% endif %}">Projekty</a></li>
-                <li class="{% if request.path == '/history' %}current{% endif %}"><a href="{% url 'history' %}" title="Historia" class="{% if request.path == '/history' %}current{% endif %}">Historia</a></li>
-                <li class="{% if request.path == '/partners' %}current{% endif %}"><a href="{% url 'partners' %}" title="Partnerzy" class="{% if request.path == '/partners' %}current{% endif %}">Partnerzy</a></li>
-                <li class="{% if request.path == '/contact' %}current{% endif %}"><a href="{% url 'contact' %}" title="{% trans 'Kontakt' %}" class="{% if request.path == '/contact' %}current{% endif %}">{% trans 'Kontakt' %}</a></li>
-            </ul>
-        </div>
+        <ul class="nav navbar-nav">
+            <li class="{% if request.path == '/' %}current{% endif %}"><a href="{% url 'index' %}" title="O nas" class="{% if request.path == '/' %}current{% endif %}">O nas</a></li>
+            <li class="{% if request.path == '/members' %}current{% endif %}"><a href="{% url 'members' %}" title="Zostań członkiem PLPUG" class="{% if request.path == '/members' %}current{% endif %}">Zostań członkiem PLPUG</a></li>
+            <li class="{% if request.path == '/meetings' %}current{% endif %}"><a href="{% url 'meetings' %}" title="Spotkania" class="{% if request.path == '/meetings' %}current{% endif %}">Spotkania</a></li>
+            <li class="{% if request.path == '/projects' %}current{% endif %}"><a href="{% url 'projects' %}" title="Projekty" class="{% if request.path == '/projects' %}current{% endif %}">Projekty</a></li>
+            <li class="{% if request.path == '/history' %}current{% endif %}"><a href="{% url 'history' %}" title="Historia" class="{% if request.path == '/history' %}current{% endif %}">Historia</a></li>
+            <li class="{% if request.path == '/partners' %}current{% endif %}"><a href="{% url 'partners' %}" title="Partnerzy" class="{% if request.path == '/partners' %}current{% endif %}">Partnerzy</a></li>
+            <li class="{% if request.path == '/contact' %}current{% endif %}"><a href="{% url 'contact' %}" title="{% trans 'Kontakt' %}" class="{% if request.path == '/contact' %}current{% endif %}">{% trans 'Kontakt' %}</a></li>
+        </ul>
     </nav>
     <div id="content">
         {% block content %}{% endblock %}

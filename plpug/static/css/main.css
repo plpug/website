@@ -1,29 +1,18 @@
-@font-face {
-    src: local("Roboto Condensed Regular"),local("RobotoCondensed-Regular"),url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsK8NE7_Gi-Xz52ZQ_AwfA78.woff) format("woff");
-    font-style: normal;
-    font-family: "Roboto Condensed";
-}
 body {
-    font-family: "Roboto Condensed";
+    background-color: #f5f8fa;
+    color: #1e3948;
 }
-a {
-    color: rgb(211, 75, 75);
-    text-decoration: none;
+img.logo {
+    display: inline-block;
 }
-a:hover {
-    color: rgb(238, 0, 0);
-    text-decoration: underline;
+header h1 {
+    display: inline-block;
+    margin-left: 3%;
 }
-h1 {
+header {
     text-align: center;
 }
-nav ul li.current,
-nav ul li.current a.current {
-    background-color: rgb(194, 0, 0);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-#content {
+#content, nav, header {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -33,4 +22,13 @@ footer {
 }
 footer p {
     margin:20px 0;
+}
+.segment {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
 }

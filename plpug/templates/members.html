@@ -3,41 +3,43 @@
 
 {% block content %}
     <section>
-        <h2>1.Zapoznaj się ze statutem, wypełnij i wyślij deklarację członkowską</h2>
-        <p><a href="https://github.com/plpug/plpug-statut/blob/master/PLPUG-Statut.rst" target="_blank">Statut</a></p>
-        <p>Deklaracja członkowska PLPUG - <a href="{% static 'docs/Deklaracja_Czlonkowska_PLPUG.pdf'%}" target="_blank" title="Deklaracja członkowska PLPUG">pobierz PDF</a> ,
-        <a href="{% static 'docs/Deklaracja_Czlonkowska_PLPUG.odt'%}" target="_blank" title="Deklaracja członkowska PLPUG">pobierz ODT</a></p>
-        <p>Uzupełniony dokument należy przesłać pocztą tradycyjną na adres Stowarzyszenia lub
-            mailem na adres: <a href="mailto:stowarzyszenie@plpug.org">stowarzyszenie@plpug.org</a></p>
-        <h2>2. Opłać składkę członkowską:</h2>
-        <p>Bank BZWBK</p>
-        <p>02 1090 2590 0000 0001 2993 4371</p>
-        <p>Stowarzyszenie Polska Grupa Użytkowników Pythona</p>
-        <p>ul. Madalińskiego 106</p>
-        <p>02-506 Warszawa, Polska</p>
-        <h3><br>Wpłaty na konto prosimy dokonywać z odpowiednim tytułem:</h3>
-        <ul>
-            <li>
-                <p>dla wpłat składek rocznych (odpowiednio 100,00 zł lub obniżona 50,00 zł*)</p>
-                <p><em>Imię i nazwisko - składka za rok 2015</em></p>
-            </li>
-            <li>
-                <p>dla wpłat składek półrocznych (odpowiednio 50,00 zł lub obniżona 25,00 zł*)</p>
-                <p><em>Imię i nazwisko - składka za 1H/2015</em></p>
-                <p><em>Imię i nazwisko - składka za 2H/2015</em></p>
-            </li>
-            <li>
-                <p>dla darowizn</p>
-                <p><em>Darowizna na cele statutowe</em></p>
-            </li>
-        </ul>
-        <p>* - zniżki zgodnie z treścią <a href="{% static 'docs/PLPUG-Uchwala-o-skladkach-czlonkowskich.pdf' %}" title="Uchwała Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015" target="_blank">Uchwały Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015</a></p>
-	</section>
-    <section>
-        <p>Wszystkich zainteresowanych Stowarzyszeniem PLPUG zapraszamy do subskrypcji publicznej
-            listy mailingowej <a href="https://mail.python.org/mailman/listinfo/plpug">Mailman</a>.
-            W tym celu wystarczy wypełnić formularz Subskrypcja listy PLPUG.
-        </p>
-        <p><a href="https://mail.python.org/pipermail/plpug/">Archiwum listy PLPUG</a></p>
+        <div class="segment">
+            <h2>1.Zapoznaj się ze statutem, wypełnij i wyślij deklarację członkowską</h2>
+            <p><a href="https://github.com/plpug/plpug-statut/blob/master/PLPUG-Statut.rst" target="_blank">Statut</a></p>
+            <p>Deklaracja członkowska PLPUG - <a href="{% static 'docs/Deklaracja_Czlonkowska_PLPUG.pdf'%}" target="_blank" title="Deklaracja członkowska PLPUG">pobierz PDF</a> ,
+            <a href="{% static 'docs/Deklaracja_Czlonkowska_PLPUG.odt'%}" target="_blank" title="Deklaracja członkowska PLPUG">pobierz ODT</a></p>
+            <p>Uzupełniony dokument należy przesłać pocztą tradycyjną na adres Stowarzyszenia lub
+                mailem na adres: <a href="mailto:stowarzyszenie@plpug.org">stowarzyszenie@plpug.org</a></p>
+            <h2>2. Opłać składkę członkowską:</h2>
+            <p>Bank BZWBK</p>
+            <p>02 1090 2590 0000 0001 2993 4371</p>
+            <p>Stowarzyszenie Polska Grupa Użytkowników Pythona</p>
+            <p>ul. Madalińskiego 106</p>
+            <p>02-506 Warszawa, Polska</p>
+            <h3><br>Wpłaty na konto prosimy dokonywać z odpowiednim tytułem:</h3>
+            <ul>
+                <li>
+                    <p>dla wpłat składek rocznych (odpowiednio 100,00 zł lub obniżona 50,00 zł*)</p>
+                    <p><em>Imię i nazwisko - składka za rok 2015</em></p>
+                </li>
+                <li>
+                    <p>dla wpłat składek półrocznych (odpowiednio 50,00 zł lub obniżona 25,00 zł*)</p>
+                    <p><em>Imię i nazwisko - składka za 1H/2015</em></p>
+                    <p><em>Imię i nazwisko - składka za 2H/2015</em></p>
+                </li>
+                <li>
+                    <p>dla darowizn</p>
+                    <p><em>Darowizna na cele statutowe</em></p>
+                </li>
+            </ul>
+            <p>* - zniżki zgodnie z treścią <a href="{% static 'docs/PLPUG-Uchwala-o-skladkach-czlonkowskich.pdf' %}" title="Uchwała Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015" target="_blank">Uchwały Walnego Zebrania Członków Stowarzyszenia PLPUG w sprawie wysokości i zasad płacenia składek członkowskich z dnia 26.04.2015</a></p>
+        </div>
+        <div class="segment">
+            <p>Wszystkich zainteresowanych Stowarzyszeniem PLPUG zapraszamy do subskrypcji publicznej
+                listy mailingowej <a href="https://mail.python.org/mailman/listinfo/plpug">Mailman</a>.
+                W tym celu wystarczy wypełnić formularz Subskrypcja listy PLPUG.
+            </p>
+            <p><a href="https://mail.python.org/pipermail/plpug/">Archiwum listy PLPUG</a></p>
+        </div>
     </section>
 {% endblock %}
