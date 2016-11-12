@@ -9,19 +9,15 @@ header h1 {
     display: inline-block;
     margin-left: 3%;
 }
-header {
+header, footer {
     text-align: center;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px 0;
 }
-#content, nav, header {
+#content, nav, header, footer {
     max-width: 1140px;
-    margin: 0 auto;
-}
-footer {
-    width: 100%;
-    text-align: center;
-}
-footer p {
-    margin:20px 0;
+    margin: 10px auto;
 }
 .segment {
     background-color: #ffffff;
