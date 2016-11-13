@@ -1,0 +1,30 @@
+body {
+    background-color: #f5f8fa;
+    color: #1e3948;
+}
+img.logo {
+    display: inline-block;
+}
+header h1 {
+    display: inline-block;
+    margin-left: 3%;
+}
+header, footer {
+    text-align: center;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 10px 0;
+}
+#content, nav, header, footer {
+    max-width: 1140px;
+    margin: 10px auto;
+}
+.segment {
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 19px;
+}
