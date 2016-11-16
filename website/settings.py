@@ -138,8 +138,3 @@ STATICFILES_FINDERS = (
 
 # http://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/spacelab/bootstrap.min.css
 DJANGO_BOOTSTRAP_UI_THEME = 'bootswatch-spacelab'
-
-try:
-    from local_settings import *
-except ImportError as e:
-    pass
