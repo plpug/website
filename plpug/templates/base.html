@@ -7,14 +7,6 @@
     <meta name="keywords" content="PLPUG, Python">
     <meta name="author" content="plpug.org">
     <link rel="icon" type="image/png" href="{% static 'img/logo_plpug_16_16.png' %}" />
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-87380218-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 {% endblock %}
 
 <title>{% block head-title %}Stowarzyszenie Polska Grupa Użytkowników Pythona{% endblock %}</title>
@@ -25,6 +17,14 @@
 {% endblock %}
 {% block head-javascript %}
     {{ block.super }}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-87380218-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <script src="{% static 'js/main.js' %}" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
 
@@ -37,7 +37,7 @@
         <ul class="nav navbar-nav">
             <li class="{% if request.path == '/' %}active{% endif %}"><a href="{% url 'index' %}" title="O nas" class="{% if request.path == '/' %}active{% endif %}">O nas</a></li>
             <li class="{% if request.path == '/members' %}active{% endif %}"><a href="{% url 'members' %}" title="Zostań członkiem PLPUG" class="{% if request.path == '/members' %}active{% endif %}">Zostań członkiem PLPUG</a></li>
-            <li class="{% if request.path == '/meetings' %}active{% endif %}"><a href="{% url 'meetings' %}" title="Spotkania" class="{% if request.path == '/meetings' %}active{% endif %}">Spotkania</a></li>
+            <li class="{% if request.path == '/meetings' %}active{% endif %}"><a href="{% url 'meetings' %}" title="Wydarzenia" class="{% if request.path == '/meetings' %}active{% endif %}">Wydarzenia</a></li>
             <li class="{% if request.path == '/projects' %}active{% endif %}"><a href="{% url 'projects' %}" title="Projekty" class="{% if request.path == '/projects' %}active{% endif %}">Projekty</a></li>
             <li class="{% if request.path == '/history' %}active{% endif %}"><a href="{% url 'history' %}" title="Historia" class="{% if request.path == '/history' %}active{% endif %}">Historia</a></li>
             <li class="{% if request.path == '/partners' %}active{% endif %}"><a href="{% url 'partners' %}" title="Partnerzy" class="{% if request.path == '/partners' %}active{% endif %}">Partnerzy</a></li>
