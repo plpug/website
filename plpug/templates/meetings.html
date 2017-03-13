@@ -1,4 +1,4 @@
-{% extends 'base.html' %}{% load i18n %}
+{% extends 'base.html' %}{% load i18n static %}
 
 {% block content %}
     <section id="contener">
@@ -10,11 +10,23 @@
             Warsztaty z wykorzystaniem Micro:bit dla dzieci w Koszalinie
         </div>
         <div class="segment">
-            3 kwietnia 2017
+            3 kwiecień 2017 - Warszawa
             <hr />
-            4Developers - konferencja dla programistów
-            <br />
-            <img src="">
+            <p style="font-weight: bold">4Developers</p>
+            <p>Zapraszamy na najbardziej interdyscyplinarne wydarzenie w polskim kalendarzu IT! Pojawimy się na Festiwalu 4Developers w roli Community Partnera.</p>
+            <p>4Developers to Festiwal Technologiczny, który oferuje wykłady i warsztaty w ramach kilkunastu ścieżek tematycznych. Głównym celem wydarzenia jest tworzenie miejsca spotkań polskiej społeczności IT, sprzyjającego wymianie umiejętności i doświadczeń.</p>
+            <p class="text-center">
+                <img src="{% static 'img/4Developers_baner.jpg' %}"/>
+            </p>
+        </div>
+        <div class="segment">
+            16 marzec 2017 - Koszalin
+            <hr />
+            <p>Targi Pracy</p>
+            <p>Zapraszamy na targi pracy, gdzie będziemy promowali platformę Micro:Bit oraz PLPUG.</p>
+            <p class="text-center">
+                <img src="{% static 'img/targi_pracy_koszalin_2017.png'%}" width="700px"/>
+            </p>
         </div>
         <div class="segment">
             czerwiec 2017
@@ -23,9 +35,10 @@
         </div>
         <h3>Odbyły się:</h3>
         <div class="segment">
-            9 marca 2017
+            9 marca 2017 - Koszalin
             <hr />
-            W dniu 9 marca podczas dni otwartych Politechniki Koszalińskiej organizowaliśmy warsztaty pokazowe płytek Micro:bit z elementami programowania w Pythonie dla młodzieży Technikum Elektroniczno - Informatycznego.
+            <p>Dni otwarte Politechniki Koszalińskiej</p>
+            <p>W dniu 9 marca podczas dni otwartych Politechniki Koszalińskiej organizowaliśmy warsztaty pokazowe płytek Micro:bit z elementami programowania w Pythonie dla młodzieży z Zespołu Szkół nr. 9 imienia Remunalda Traugutta, kierunki: Informatyka oraz Elektronika.</p>
         </div>
 
         <div class="segment">
