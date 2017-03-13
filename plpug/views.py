@@ -50,3 +50,10 @@ class ContactView(generic.TemplateView):
     """
     template_name = 'contact.html'
 
+
+class MicrobitView(generic.TemplateView):
+    """
+    Contact page
+    """
+    template_name = 'microbit.html'
+

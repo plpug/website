@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from .views import IndexView, ContactView, MeetingsView, MembersView, HistoryView, PartnersView,\
-    ProjectsView
+    ProjectsView, MicrobitView
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='index'),
@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^history$', HistoryView.as_view(), name='history'),
     url(r'^partners$', PartnersView.as_view(), name='partners'),
     url(r'^contact$', ContactView.as_view(), name='contact'),
+    url(r'^microbit$', MicrobitView.as_view(), name='microbit'),
 ]
