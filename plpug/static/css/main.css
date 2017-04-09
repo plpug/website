@@ -19,6 +19,18 @@ header, footer {
     max-width: 1140px;
     margin: 10px auto;
 }
+#cookie-info-container {
+    background-color: #ffffff;
+    display: block;
+    text-align: center;
+    font-size: 10pt;
+}
+#cookie-info-container div {
+    padding: 5px;
+}
+#cookie-info-container .close {
+    margin-right: 1%;
+}
 .segment {
     background-color: #ffffff;
     border: 1px solid #e3e3e3;

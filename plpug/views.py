@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.views import generic
 
 
@@ -57,3 +57,12 @@ class MicrobitView(generic.TemplateView):
     """
     template_name = 'microbit.html'
 
+
+def agree_on_cookie_store(request):
+    """
+    Used by ajax to say agree for storing cookie
+    :param request: 
+    :return: confirmation
+    """
+    request.session['isagree'] = True
+    return HttpResponse("OK")

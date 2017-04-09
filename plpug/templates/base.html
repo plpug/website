@@ -25,10 +25,19 @@
       ga('create', 'UA-87380218-1', 'auto');
         ga('send', 'pageview');
     </script>
+    <script src="{% static 'js/jquery-3.2.0.js' %}" type="text/javascript" charset="utf-8"></script>
     <script src="{% static 'js/main.js' %}" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
 
 {% block body-content %}
+    {% if not request.session.isagree %}
+        <div id="cookie-info-container" class="">
+            <div class="">
+                Ta strona używa cookie w celach statystycznych. Korzystając z niej wyrażasz zgodę na ich używanie, zgodnie z ustawieniami przeglądarki.
+                <button type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            </div>
+        </div>
+    {% endif %}
     <header>
         <a href="/"><img src="{% static 'img/logo_plpug_on_light.png' %}" alt="PLPUG" class="logo" /></a>
         <h1>{% trans 'Stowarzyszenie Polska Grupa Użytkowników Pythona' %}</h1>

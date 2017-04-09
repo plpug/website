@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from .views import IndexView, ContactView, MeetingsView, MembersView, HistoryView, PartnersView,\
-    ProjectsView, MicrobitView
+    ProjectsView, MicrobitView, agree_on_cookie_store
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='index'),
@@ -11,4 +11,5 @@ urlpatterns = [
     url(r'^partners$', PartnersView.as_view(), name='partners'),
     url(r'^contact$', ContactView.as_view(), name='contact'),
     url(r'^microbit$', MicrobitView.as_view(), name='microbit'),
+    url(r'^agree-on-cookie-store$', agree_on_cookie_store, name='agree_on_cookie_store'),
 ]
