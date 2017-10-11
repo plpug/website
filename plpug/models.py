@@ -19,6 +19,7 @@ class Event(models.Model):
         verbose_name=_('Ended at'),
     )
     place = models.CharField(
+        max_length=255,
         verbose_name=_('Place'),
     )
     content = models.TextField(
