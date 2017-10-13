@@ -46,7 +46,7 @@
         <ul class="nav navbar-nav">
             <li class="{% if request.path == '/' %}active{% endif %}"><a href="{% url 'index' %}" title="O nas" class="{% if request.path == '/' %}active{% endif %}">O nas</a></li>
             <li class="{% if request.path == '/members' %}active{% endif %}"><a href="{% url 'members' %}" title="Zostań członkiem PLPUG" class="{% if request.path == '/members' %}active{% endif %}">Zostań członkiem PLPUG</a></li>
-            <li class="{% if request.path == '/meetings' %}active{% endif %}"><a href="{% url 'meetings' %}" title="Wydarzenia" class="{% if request.path == '/meetings' %}active{% endif %}">Wydarzenia</a></li>
+            <li class="{% if request.path == '/events' %}active{% endif %}"><a href="{% url 'events' %}" title="Wydarzenia" class="{% if request.path == '/events' %}active{% endif %}">Wydarzenia</a></li>
             <li class="{% if request.path == '/projects' %}active{% endif %}"><a href="{% url 'projects' %}" title="Projekty" class="{% if request.path == '/projects' %}active{% endif %}">Projekty</a></li>
             <li class="{% if request.path == '/history' %}active{% endif %}"><a href="{% url 'history' %}" title="Historia" class="{% if request.path == '/history' %}active{% endif %}">Historia</a></li>
             <li class="{% if request.path == '/partners' %}active{% endif %}"><a href="{% url 'partners' %}" title="Partnerzy" class="{% if request.path == '/partners' %}active{% endif %}">Partnerzy</a></li>

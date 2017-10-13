@@ -43,3 +43,6 @@ class Event(models.Model):
         default=True,
         verbose_name=_('Is published'),
     )
+
+    def __str__(self):
+        return self.title[:100]
