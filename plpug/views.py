@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.utils.timezone import now
 from django.views import generic
 
-from .models import Event
+from .models import Event, News
 
 
 class IndexView(generic.TemplateView):
@@ -74,6 +74,10 @@ class MicrobitView(generic.TemplateView):
     Contact page
     """
     template_name = 'microbit.html'
+
+class NewsView(generic.ListView):
+    model = News
+    template_name = 'plpug/news.html'
 
 
 def agree_on_cookie_store(request):
