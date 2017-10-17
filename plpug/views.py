@@ -27,6 +27,10 @@ class EventsListView(generic.ListView):
         return context
 
 
+class ProjectsListView(generic.ListView):
+    model = Project
+
+
 class MeetingsView(generic.TemplateView):
     """
     Meetings we are
@@ -79,7 +83,7 @@ class MicrobitView(generic.TemplateView):
 def agree_on_cookie_store(request):
     """
     Used by ajax to say agree for storing cookie
-    :param request: 
+    :param request:
     :return: confirmation
     """
     request.session['isagree'] = True

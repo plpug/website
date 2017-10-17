@@ -1,0 +1,12 @@
+{% extends 'base.html' %}{% load i18n static %}
+
+{% block content %}
+    <section id="contener">
+      <div class="segment">
+        <h3>Projekty:</h3>
+          {% for object in object_list %}
+            <p><a href="{{ object.project_url }}">{{ object.name }}</a></p>
+          {% endfor %}
+      </div>
+    </section>
+{% endblock %}

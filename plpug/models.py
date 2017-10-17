@@ -46,3 +46,16 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title[:100]
+
+
+class Project(models.Model):
+    name = models.CharField(
+        max_length=255,
+        verbose_name=_('Project name'),
+    )
+    project_url = models.URLField(
+        verbose_name=_('URL'),
+    )
+
+    def __str__(self):
+        return self.name[:100]
