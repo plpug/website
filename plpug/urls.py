@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from .views import IndexView, EventsListView, ContactView, MeetingsView, MembersView, \
-    HistoryView, PartnersView, ProjectsListView, MicrobitView, agree_on_cookie_store
+    HistoryView, PartnersView, ProjectsListView, MicrobitView, NewsView, agree_on_cookie_store
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='index'),

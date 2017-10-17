@@ -2,7 +2,7 @@ from django.shortcuts import render, HttpResponse
 from django.utils.timezone import now
 from django.views import generic
 
-from .models import Event, News
+from .models import Event, News, Project
 
 
 class IndexView(generic.TemplateView):
