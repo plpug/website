@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% load i18n static %}
+
+{% block content %}
+    <h3>Aktualności:</h3>
+    {% for object in object_list %}
+    <section id="contener">
+        <div class="segment">
+            <strong>{{ object.published_date }} - {{ object.place }}<br/></strong>
+            <hr />
+            <p><strong>{{ object.title }} - {{ object.text }}</strong></p>
+            <div>
+                {{ object.content }}
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+{% endblock %}

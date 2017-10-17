@@ -4,6 +4,39 @@ from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 
 
+
+# Create your models here.
+class News(models.Model):
+    create_date = models.DateTimeField(
+        verbose_name=_('Created at'),
+        auto_now_add=True,
+    )
+    title = models.CharField(
+        max_length=255,
+        verbose_name=_("Title"),
+    )
+    text = models.TextField(
+        verbose_name=_("Text"),
+    )
+    author = models.ForeignKey(
+        'auth.User',
+        verbose_name=_("Author"),
+    )
+    is_published = models.BooleanField(
+        default=True,
+        verbose_name=_('Is published'),
+    )
+    published_date = models.DateTimeField(
+        verbose_name=_('Published at'),
+        auto_now_add=True,
+    )
+    place = models.CharField(
+        max_length=255,
+        verbose_name=_('Place'),
+    )
+
+
+
 class Event(models.Model):
     """
     Events
@@ -43,6 +76,9 @@ class Event(models.Model):
         default=True,
         verbose_name=_('Is published'),
     )
+
+
+
 
     def __str__(self):
         return self.title[:100]
