@@ -1,8 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from django.utils.timezone import now
 from django.views import generic
-
-from .models import Event, News, Project
 
 
 class IndexView(generic.TemplateView):
@@ -10,25 +7,6 @@ class IndexView(generic.TemplateView):
     Home page
     """
     template_name = 'index.html'
-
-
-class EventsListView(generic.ListView):
-    """
-    All events on one site
-    """
-    model = Event
-
-    def get_context_data(self, **kwargs):
-        """
-        Show only future events
-        """
-        context = super().get_context_data(**kwargs)
-        context['object_list'] = context['object_list'].filter(ended_at__gt=now())
-        return context
-
-
-class ProjectsListView(generic.ListView):
-    model = Project
 
 
 class MeetingsView(generic.TemplateView):
@@ -78,10 +56,6 @@ class MicrobitView(generic.TemplateView):
     Contact page
     """
     template_name = 'microbit.html'
-
-class NewsView(generic.ListView):
-    model = News
-    template_name = 'plpug/news.html'
 
 
 def agree_on_cookie_store(request):
