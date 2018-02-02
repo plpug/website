@@ -1,17 +1,18 @@
 {% extends 'base.html' %}{% load i18n static %}
 
 {% block content %}
-    <section>
+    {% for event in future_events %}
+    <section id="contener">
         <div class="segment">
-            <p style="font-weight: bold;">Walne Zebranie Członków Stowarzyszenia Polskiej Grupy Użytkowników Pythona</p>
+            <strong>{{ event.started_at|date:"d.m.Y" }} - {{ event.place }}<br/></strong>
             <hr />
-            <p style="font-weight: bold;">18 listopada 2017 r.</p>
-            <p>
-                Dnia 18 listopada 2017 r. odbyło się Walne Zebranie Członków Stowarzyszenia Polskiej Grupy Użytkowników Pythona.<br/>
-                Protokół oraz uchwały z zebrania dostępne <a href="{% url 'history' %}">tutaj</a>
-            </p>
+            <p><strong>{{ event.title }}</strong></p>
+            <div>
+                {{ event.content|safe }}
+            </div>
         </div>
     </section>
+    {% endfor %}
     <section>
         <div class="segment">
             <h3>Projekt Micro:bit</h3>

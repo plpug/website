@@ -11,6 +11,14 @@ class IndexView(generic.TemplateView):
     """
     template_name = 'index.html'
 
+    def get_context_data(self, **kwargs):
+        """
+        Show only future events
+        """
+        context = super().get_context_data(**kwargs)
+        context['future_events'] = Event.objects.filter(ended_at__gt=now())
+        return context
+
 
 class EventsListView(generic.ListView):
     """
