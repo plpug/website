@@ -16,7 +16,9 @@ class IndexView(generic.TemplateView):
         Show only future events
         """
         context = super().get_context_data(**kwargs)
-        context['future_events'] = Event.objects.filter(ended_at__gt=now())
+        context['future_events'] = Event.objects.filter(
+            ended_at__gt=now()
+        ).order_by('-started_at')
         return context
 
 
@@ -31,8 +33,12 @@ class EventsListView(generic.ListView):
         Show only future events
         """
         context = super().get_context_data(**kwargs)
-        context['future_events'] = context['object_list'].filter(ended_at__gt=now())
-        context['past_events'] = context['object_list'].filter(ended_at__lte=now())
+        context['future_events'] = context['object_list'].filter(
+            ended_at__gt=now(),
+        ).order_by('-started_at')
+        context['past_events'] = context['object_list'].filter(
+            ended_at__lte=now()
+        ).order_by('-started_at')
         return context
 
 
