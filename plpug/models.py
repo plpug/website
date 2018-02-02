@@ -33,6 +33,9 @@ class News(models.Model):
         verbose_name=_('Place'),
     )
 
+    def __str__(self):
+        return self.title[:100]
+
 
 class Event(models.Model):
     """
