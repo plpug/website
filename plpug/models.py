@@ -4,8 +4,6 @@ from django.contrib.auth.models import User
 from django.utils.translation import ugettext_lazy as _
 
 
-
-# Create your models here.
 class News(models.Model):
     create_date = models.DateTimeField(
         verbose_name=_('Created at'),
@@ -34,7 +32,6 @@ class News(models.Model):
         max_length=255,
         verbose_name=_('Place'),
     )
-
 
 
 class Event(models.Model):
@@ -76,9 +73,6 @@ class Event(models.Model):
         default=True,
         verbose_name=_('Is published'),
     )
-
-
-
 
     def __str__(self):
         return self.title[:100]

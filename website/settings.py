@@ -25,7 +25,7 @@ SECRET_KEY = 's0-715c*9==g-zo9*774!sir-vq%_@6liu_v+w#pt7&c(=i2ip'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

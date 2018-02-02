@@ -23,7 +23,8 @@ class EventsListView(generic.ListView):
         Show only future events
         """
         context = super().get_context_data(**kwargs)
-        context['object_list'] = context['object_list'].filter(ended_at__gt=now())
+        context['future_events'] = context['object_list'].filter(ended_at__gt=now())
+        context['past_events'] = context['object_list'].filter(ended_at__lte=now())
         return context
 
 

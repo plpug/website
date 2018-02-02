@@ -2,14 +2,28 @@
 
 {% block content %}
     <h3>Nadchodzące wydarzenia:</h3>
-    {% for object in object_list %}
+    {% for event in future_events %}
     <section id="contener">
         <div class="segment">
-            <strong>{{ object.started_at }} - {{ object.place }}<br/></strong>
+            <strong>{{ event.started_at|date:"d.m.Y" }} - {{ event.place }}<br/></strong>
             <hr />
-            <p><strong>{{ object.title }}</strong></p>
+            <p><strong>{{ event.title }}</strong></p>
             <div>
-                {{ object.content }}
+                {{ event.content|safe }}
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+
+    <h3>Minione wydarzenia:</h3>
+    {% for event in past_events %}
+    <section id="contener">
+        <div class="segment">
+            <strong>{{ event.started_at|date:"d.m.Y" }} - {{ event.place }}<br/></strong>
+            <hr />
+            <p><strong>{{ event.title }}</strong></p>
+            <div>
+                {{ event.content|safe }}
             </div>
         </div>
     </section>
