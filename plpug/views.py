@@ -18,7 +18,7 @@ class IndexView(generic.TemplateView):
         context = super().get_context_data(**kwargs)
         context['future_events'] = Event.objects.filter(
             ended_at__gt=now()
-        ).order_by('-started_at')
+        ).order_by('started_at')
         return context
 
 
