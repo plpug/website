@@ -40,3 +40,6 @@ header, footer {
     min-height: 20px;
     padding: 19px;
 }
+.faq-question {
+    margin: 30px 0 20px 50px;
+}
