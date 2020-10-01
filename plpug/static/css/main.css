@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+
+
 body {
+    font-family: 'Peddana', serif;
     background-color: #f5f8fa;
     color: #1e3948;
 }
